@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 
-const TOKEN = require('./src/config')
+const config = require('./src/config.json')
 const commands = require('./src/commands/index')
 
 const bot = new Discord.Client()
@@ -39,7 +39,7 @@ bot.on('message', (message) => {
         command = command.split(' ')
         switch (command[0]){
             case 'help':
-                commands.help(message)
+                commands.help(message, bot.user.avatarURL)
                 break
             case 'test':
                 commands.test(message)
@@ -67,7 +67,7 @@ bot.on('message', (message) => {
                 commands.resume(message, state)
                 break
             case 'playtime':
-                commands.time(message, state)
+                commands.playtime(message, state)
                 break
             case 'ban':
                 commands.ban(message)
@@ -82,4 +82,4 @@ bot.on('message', (message) => {
     }
 })
 
-bot.login(TOKEN)
+bot.login(config.token)

@@ -3,7 +3,7 @@ const month = new Array('January', 'February', 'March', 'April', 'May', 'June', 
 
 const time = (message) => {
     const date = new Date()
-    message.reply('it is **' + weekday[date.getDay()] + ', ' + month[date.getMonth()] + ' ' + date.getDate() + ' ' + date.toLocaleTimeString() + '.**')
+    message.reply('it is **' + weekday[date.getDay()] + ', ' + month[date.getMonth()] + ' ' + date.getDate() + ' ' + date.toLocaleTimeString() + '**')
 }
 
 module.exports = time

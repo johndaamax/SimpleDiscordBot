@@ -2,5 +2,5 @@
 /node_modules
 
 #token
-/src/config.js
+/src/config.json
 

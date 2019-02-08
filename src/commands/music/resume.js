@@ -2,7 +2,7 @@ const resume = (message, state) => {
     if(state.dispatcher){
         state.dispatcher.resume()
     } else {
-        message.reply('No song is currently playing')
+        message.reply('no song is currently playing')
     }
 }
 

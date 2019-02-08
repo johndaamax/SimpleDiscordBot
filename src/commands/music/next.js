@@ -2,7 +2,7 @@ const next = (message, state) => {
     if(state.dispatcher){
         state.dispatcher.end()
     } else {
-        message.reply('No song is currently playing')
+        message.reply('no song is currently playing')
     }
 }
 
