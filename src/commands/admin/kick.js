@@ -1,10 +1,10 @@
 const kick = (message) => {
 
-    if(message.member.hasPermissions('ADMINISTRATOR')) {
+    if(message.member.hasPermission('ADMINISTRATOR')) {
 		const member = message.guild.member(message.mentions.users.first())
 		if (member) {
 			member.kick()
-				.then(() => message.reply(`Successfully kicked ${user.tag}`))					
+				.then(() => message.reply(`Successfully kicked ${member.user.tag}`))					
 				.catch(err => {
 					message.reply('I was unable to kick the member')
 					console.error(err);

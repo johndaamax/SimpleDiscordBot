@@ -4,19 +4,28 @@ const TOKEN = require('./src/config')
 const commands = require('./src/commands/index')
 
 const bot = new Discord.Client()
-
 const state = {
     dispatcher: null,
     connection:  null,
     botVoiceChannel: null
 }   
 
+
+// welcome channel id 543470200541151272
 bot.on('ready', () => {
     console.log('I am ready!');
     bot.user.setActivity('Administrator')
+
+    // bot.guilds.forEach(guild => {
+    //     console.log(guild.id + '  ' + guild.name)
+    //     guild.channels.forEach(ch => {
+    //         console.log(ch.id + ' ' + ch.name)
+    //     })
+    // })
 })
 
 bot.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.find(ch => {ch.id === '543470200541151272'})
     channel.send(`Welcome to the server, ${member}`)
     //Assign a member role to anyone who joins
     const memberRole = member.guild.roles.find('name', 'Member')
@@ -42,6 +51,9 @@ bot.on('message', (message) => {
                     description: 'A test description'
                 })
                 break
+            case 'time':
+                commands.time(message)
+                break
             case 'youtube':
                 commands.youtube(message, state)
                 break
@@ -54,11 +66,8 @@ bot.on('message', (message) => {
             case 'resume':
                 commands.resume(message, state)
                 break
-            case 'time':
+            case 'playtime':
                 commands.time(message, state)
-                break
-            case 'role':
-                commands.testRole(message)
                 break
             case 'ban':
                 commands.ban(message)
