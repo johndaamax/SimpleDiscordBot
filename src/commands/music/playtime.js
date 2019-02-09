@@ -1,5 +1,3 @@
-
-
 const playtime = (message, state) => {
     if(state.dispatcher){
         let minutes = Math.floor(state.dispatcher.time / 60000)
