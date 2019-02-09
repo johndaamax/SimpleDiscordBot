@@ -1,5 +1,5 @@
 const ytdl = require('ytdl-core')
-const ytList = require('./assets/youtubeList')
+const ytList = require('./assets/youtubeList.json')
 
 
 const youtube = (message, state) => {
