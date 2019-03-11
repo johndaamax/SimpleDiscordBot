@@ -1,6 +1,5 @@
 # dependencies
-/node_modules
+node_modules
 
 #token
-/src/config.json
-
+src/config.json
