@@ -1,20 +1,20 @@
-const ytdl = require('ytdl-core')
+const ytdl = require('ytdl-core-discord')
 const ytList = require('./assets/youtubeList.json')
 
-const youtube = (message, state) => {
+const youtube = async (message, state) => {
 	if (!message.guild) return
 	// Only try to join the sender's voice channel if they are in one themselves
-	if (message.member.voiceChannel) {
-		if (state.connection === null || state.botVoiceChannel !== message.member.voiceChannel) {
-			message.member.voiceChannel
-				.join()
-				.then(connection => {
-					// Connection is an instance of VoiceConnection
-					state.connection = connection
-					state.botVoiceChannel = message.member.voiceChannel
-					play(message, state)
-				})
-				.catch(e => console.error(e))
+	if (message.member.voice.channel) {
+		if (state.connection === null || state.botChannel !== message.member.voice.channel) {
+			try {
+				const connection = await message.member.voice.channel.join()
+				state.connection = connection
+				state.botChannel = message.member.voice.channel
+				play(message, state)
+			} catch (e) {
+				console.error(e)
+			}
+
 		} else {
 			play(message, state)
 		}
@@ -23,19 +23,18 @@ const youtube = (message, state) => {
 	}
 }
 
-const play = (message, state) => {
+const play = async (message, state) => {
 	const streamOptions = {
 		volume: 0.5,
 		bitrate: 'auto'
 	}
 
-	if (ytList.link[0]) {
-		state.dispatcher = state.connection.playStream(ytdl(ytList.link[0], { filter: 'audioonly' }), streamOptions)
-		message.channel.send('Currently playing: :notes: ' + ytList.name[0] + ' :notes:')
-		ytList.link.shift()
-		ytList.name.shift()
-		const str = ytList.link.length === 1 ? ' song' : ' songs'
-		message.channel.send(ytList.link.length + str + ' left in the queue.')
+	if (ytList[0]) {
+		state.dispatcher = state.connection.play(await ytdl(ytList[0].link), { type: 'opus', filter: "audioonly" }, streamOptions)
+		message.channel.send(`Currently playing: :notes: ${ytList[0].title} :notes:`)
+		ytList.shift()
+		const str = ytList.length === 1 ? ' song' : ' songs'
+		message.channel.send(`${ytList.length} ${str} left in the queue.`)
 		state.dispatcher.on('end', () => {
 			setTimeout(() => {
 				if (state.connection) {

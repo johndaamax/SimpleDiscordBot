@@ -1,10 +1,10 @@
 const playtime = (message, state) => {
 	if (state.dispatcher) {
-		let minutes = Math.floor(state.dispatcher.time / 60000)
-		let seconds = Math.floor((state.dispatcher.time - minutes * 60000) / 1000)
-		message.reply('the song has been playing for **' + minutes + 'm ' + seconds + 'sec**')
+		let minutes = Math.floor(state.dispatcher.streamTime / 60000)
+		let seconds = Math.floor((state.dispatcher.streamTime - minutes * 60000) / 1000)
+		message.reply(`The song has been playing for ** ${minutes}min ${seconds}sec **`)
 	} else {
-		message.reply('no song is currently playing')
+		message.reply('No song is currently playing')
 	}
 }
 

@@ -1,7 +1,7 @@
-const { RichEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js')
 
 const embed = (message, payload) => {
-	const emb = new RichEmbed()
+	const emb = new MessageEmbed()
 		.setTitle(payload.title)
 		.setColor(payload.color)
 		.setDescription(payload.description)

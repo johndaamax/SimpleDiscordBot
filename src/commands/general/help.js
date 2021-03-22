@@ -1,7 +1,7 @@
-const { RichEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js')
 
 const help = (message, botAvatar) => {
-	const hlp = new RichEmbed()
+	const hlp = new MessageEmbed()
 		.setAuthor('Heisenbot commands', botAvatar)
 		.addField('**!test**', 'The bot replies back as a test.')
 		.addField('**!embed**', 'The bot writes back an embed.')

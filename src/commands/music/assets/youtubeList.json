@@ -1,46 +1,104 @@
-{
-	"link": [
-		"https://www.youtube.com/watch?v=QgyGZm41hFw",
-		"https://www.youtube.com/watch?v=UYwF-jdcVjY",
-		"https://www.youtube.com/watch?v=44VBVj7n91s",
-		"https://www.youtube.com/watch?v=RE87rQkXdNw",
-		"https://www.youtube.com/watch?v=SkqfSdqVz_0",
-		"https://www.youtube.com/watch?v=SJOgTMP8cs4",
-		"https://www.youtube.com/watch?v=xTlNMmZKwpA",
-		"https://www.youtube.com/watch?v=ir6nk2zrMG0",
-		"https://www.youtube.com/watch?v=y2tEPmwWEiI",
-		"https://www.youtube.com/watch?v=5Fv19KVVya8",
-		"https://www.youtube.com/watch?v=5-xhpcgBMe4",
-		"https://www.youtube.com/watch?v=Bran_v6ZtPI",
-		"https://www.youtube.com/watch?v=4IPEcV8_uaM",
-		"https://www.youtube.com/watch?v=dTQMd2I3drE",
-		"https://www.youtube.com/watch?v=KXanlLjOFh0",
-		"https://www.youtube.com/watch?v=Az-mGR-CehY",
-		"https://www.youtube.com/watch?v=HuIrr-qJ_UQ",
-		"https://www.youtube.com/watch?v=XCQK6LmhYqc",
-		"https://www.youtube.com/watch?v=dlO8aANekSM",
-		"https://www.youtube.com/watch?v=XnyHYeCsXJ8"
-	],
-	"name": [
-		"Morandi - Kalinka",
-		"Post Malone - Better Now",
-		"Alan Walker Ft. Sofia Carson, K-391 & CORSAK - Different World",
-		"Marshmello Ft. Bastille - Happier",
-		"TRFN Ft. Siadou - U DO",
-		"The Chainsmokers - Hope ft. Winona Oak",
-		"Cardi B, Bad Bunny & J Balvin - I Like It",
-		"Calvin Harris, Rag'n'Bone Man - Giant",
-		"DHARIA - Sugar & Brownies",
-		"KAZKA - Plakala",
-		"Infinity Ink - Infinity (Dubdogz & Bhaskar Remix) (Bass Boosted)",
-		"Clean Bandit Ft. Ellie Goulding - Mama",
-		"Havana Ft. Yaar - I Lost You",
-		"Calvin Harris Ft. Sam Smith - Promises",
-		"Jax Jones, Mabel Ft. Rich The Kid - Ring Ring",
-		"K-391 & Alan Walker Ft. Julie Bergan & Seungri - Ignite",
-		"Jax Jones, Years & Years - Play",
-		"Rita Ora - Let You Love Me",
-		"Triplo Max - Shadow",
-		"Clean Bandit Ft. Charli XCX & Bhad Bhabie - Playboy Style"
-	]
-}
+[
+	{
+		"link": "https://www.youtube.com/watch?v=DGJepHUwHm",
+		"title": "Pitbull x Farruko x IAmChino x El Alfa x Omar Courtz - Ten Cuidado (Official Video)",
+		"genre": "Latin",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=gXNdCWXO8AM",
+		"title": "Masked Wolf - Astronaut In The Ocean",
+		"genre": "Hip hop",
+		"yearReleased": 2018
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=ErHFQ3r9K2Y",
+		"title": "Sea Shanty - Wellerman (Official Music Video)",
+		"genre": "EDM",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=mw7Y0jQ8_BU",
+		"title": "Pháo - 2 Phút Hơn (KAIZ Remix) [Official Music Video]",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=cDZ0JfQ_UiM",
+		"title": "Le Shuuk - Goodbye (feat. Xillions) [Official Music Video]",
+		"genre": "EDM",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=XVTclMImp00",
+		"title": "Sam Dawson & Jodie Fitzgibbon - Better Without Me [Bass Rebels] No Copyright Pop Music With Vocals",
+		"genre": "Pop",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=atXXPF-z7fk",
+		"title": "AronChupa & Little Sis Nora - Trombone",
+		"genre": "Electro Swing",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=UrgHkmiYmpc",
+		"title": "Tujamo, VIZE, MAJAN - Lonely (Besomorph Remix / Lyric Video)",
+		"genre": "EDM",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=5RWaO9Si750",
+		"title": "Tomcraft, MOGUAI, ILIRA – Happiness (Official Lyric Video)",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=TbRSyJB3gH4",
+		"title": "Agatino Romero & LANNÉ - Adrenaline",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=If_hCjPFKMM",
+		"title": "Stadiumx & Sebastian Wibe - We Are Life (MOTi Remix) feat. Mingue",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=KiObb2wIjcM",
+		"title": "Olympis, Helion - TiK ToK (feat. Liinii) [Official Audio]",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=jqR39HgBtpU",
+		"title": "MOTi x Laura White - Push It Right",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=qe-UHiFpsp0",
+		"title": "Fyex & Lunis - Hear Me Now",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=wCUT6ZfT8RU",
+		"title": "Show Me Love (Dimitri Vegas Edit) - Dino Warriors ft. Leony",
+		"genre": "EDM",
+		"yearReleased": 2020
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=Kgy2R17mtsQ",
+		"title": "Ayo Technology (Dimitri Vegas Edit) - Dino Warriors x Julian Perretta",
+		"genre": "EDM",
+		"yearReleased": 2021
+	},
+	{
+		"link": "https://www.youtube.com/watch?v=sUMFwnUGZ3I",
+		"title": "Noro - DEEP END (Official Video)",
+		"genre": "EDM",
+		"yearReleased": 2020
+	}
+]

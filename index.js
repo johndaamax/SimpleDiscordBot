@@ -1,13 +1,13 @@
 const Discord = require('discord.js')
 
-const config = require('./src/config.json')
+const config = require('./config.json')
 const commands = require('./src/commands/index')
 
 const bot = new Discord.Client()
 const state = {
 	dispatcher: null,
 	connection: null,
-	botVoiceChannel: null
+	botChannel: null
 }
 
 // welcome channel id 543470200541151272
@@ -24,10 +24,9 @@ bot.on('ready', () => {
 })
 
 bot.on('guildMemberAdd', member => {
-	const channel = member.guild.channels.find(ch => {
-		ch.id === '543470200541151272'
-	})
+	const channel = member.guild.channels.find(ch => ch.id === '543470200541151272')
 	channel.send(`Welcome to the server, ${member}`)
+
 	//Assign a member role to anyone who joins
 	const memberRole = member.guild.roles.find('name', 'Member')
 	member.addRole(memberRole)
